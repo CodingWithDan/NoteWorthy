@@ -39,6 +39,19 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   - DB_STRING: `your database URI` 
  ---
  
+ ---
+
+# Contributors
+
+- [Rachel](https://github.com/RachFairchild)
+- [Amy](https://github.com/ApplePieAngel)
+- [Eno](https://github.com/codEno12)
+- [Ali](https://github.com/AliReza1083)
+- [Bonnie](https://github.com/MissGin)
+- [Daniel](https://github.com/CodingWithDan)
+
+ ---
+ 
  Have fun testing and improving it! 😎
 
 
