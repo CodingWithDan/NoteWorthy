@@ -13,11 +13,19 @@ module.exports = {
     },
     createTodo: async (req, res)=>{
         try{
-            console.log(req.body)
+            const hoursOffSet = req.body.todoItem[1]
+            const currentTime = Date.now()
+            const deadLine = hoursOffSet + currentTime
+            console.log(deadLine)
+            console.log(currentTime)
             await Todo.create({todo: req.body.todoItem[0], completed: false, userId: req.user.id})
             //  todoItem: [ 'todo1', '2' ] 
+
+
             console.log('Todo has been added!')
             res.redirect('/todos')
+
+
         }catch(err){
             console.log(err)
         }
@@ -53,5 +61,5 @@ module.exports = {
         }catch(err){
             console.log(err)
         }
-    }
+    },
 }    
