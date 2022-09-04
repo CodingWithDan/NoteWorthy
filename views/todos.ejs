@@ -11,11 +11,17 @@
     <h1>Todos</h1>
     <ul>
     <% todos.forEach( el => { %>
+        <% if(!el.completed){ %>
             <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
                 <span class='del'> Delete </span>
+            
                 <span class='dueDate'> Due Date: <%= el.dueDate %> </span>
             </li>
+        <% } else{ %>
+
+        <% } %>
+
     <% }) %>    
     </ul>
 
@@ -28,6 +34,20 @@
     </form>
 
     <a href="/logout">Logout</a>
+
+    <h1>Completed</h1>
+        <ul>
+            <% todos.forEach( el => { %>
+                <% if(el.completed){ %>
+                    <li class='todoItem' data-id='<%=el._id%>'>
+                        <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
+                        <span class='del'> Delete </span>
+                    </li>
+                <% } else{ %>
+                    
+                <% } %>
+            <% }) %> 
+        </ul>
 
     <script src="js/main.js"></script>
 </body>
