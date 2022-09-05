@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nothing but Notes</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,10 +13,10 @@
     <% todos.forEach( el => { %>
         <% if(!el.completed){ %>
             <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
+                <span class='<%= el.completed === true ? 'completed' : 'not' %>'><%= el.todo %></span>
                 <span class='del'> Delete </span>
-            
-                <span class='dueDate'> Due Date: <%= el.dueDate %> </span>
+                
+                <span class='dueDate'> Due Date: <%= el.dueDate.toString().split(' ').slice(0, 3).join(' ') %> </span>
             </li>
         <% } else{ %>
 
@@ -29,7 +29,7 @@
 
     <form action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-        <input type="number" placeholder="Hours From Now" name='todoItem'>
+        <input type="date" placeholder=" " name='todoDate'>
         <input type="submit">
     </form>
 
@@ -40,8 +40,9 @@
             <% todos.forEach( el => { %>
                 <% if(el.completed){ %>
                     <li class='todoItem' data-id='<%=el._id%>'>
-                        <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
-                        <span class='del'> Delete </span>
+                        <span class='<%= el.completed === true ? 'completed' : 'not' %>'><%= el.todo %></span>
+                        <button class='del'> Delete </button>
+                        <!-- <span class='del'> Delete </span> -->
                     </li>
                 <% } else{ %>
                     
