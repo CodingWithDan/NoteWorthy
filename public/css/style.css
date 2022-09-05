@@ -8,3 +8,21 @@ h1{
 .not{
     text-decoration: underline;
 }
+
+
+.urgent{
+    color: red;
+}
+
+.priority1{
+    color: orange;
+}
+
+.priority2 {
+    color: blue;
+}
+
+.priority3 {
+    color: purple;
+    
+}

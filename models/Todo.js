@@ -9,6 +9,7 @@ const TodoSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
+
   userId: {
     type: String,
     required: true
@@ -17,10 +18,14 @@ const TodoSchema = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
+
   dueDate: {
     type: Date,
-    required: true
+    default: Date.now()
   },
+  colorClass: {
+    type: String
+  }
 })
 
 module.exports = mongoose.model('Todo', TodoSchema)
