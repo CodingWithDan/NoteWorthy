@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nothing but Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <title>Noteworthy</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
-<body>
-    <h1>Todos</h1>
+<body class="container">
+    <h1>Noteworthy</h1>
     <ul>
     <% todos.forEach( el => { %>
         <% if(!el.completed){ %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not' %>'><%= el.todo %></span>
-                <span class='del'> Delete </span>
+            <li class='todoItem' data-id='<%- el._id%>'>
+                <br>
+               <span><%= todos.indexOf(el) + 1%>.</span><span class='<%= el.completed === true ? 'completed' : 'not' %>'><%- el.todo %></span><br>
+                <button type="button" class='del'> Delete </button>
                 
                 <span class='dueDate'> Due Date: <%= el.dueDate.toString().split(' ').slice(0, 3).join(' ') %> </span>
+                
             </li>
         <% } else{ %>
 
@@ -28,7 +34,8 @@
     <h2><%= user.userName %> has <%= left %> things left to do.</h2>
 
     <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+        <textarea type="text" placeholder="Enter Todo Item" name='todoItem' id="body"></textarea>
+        <h5>Select Due Date</h5>
         <input type="date" placeholder=" " name='todoDate'>
         <input type="submit">
     </form>
@@ -41,8 +48,7 @@
                 <% if(el.completed){ %>
                     <li class='todoItem' data-id='<%=el._id%>'>
                         <span class='<%= el.completed === true ? 'completed' : 'not' %>'><%= el.todo %></span>
-                        <button class='del'> Delete </button>
-                        <!-- <span class='del'> Delete </span> -->
+                        <button type="button" class='del'> Delete </button>
                     </li>
                 <% } else{ %>
                     
@@ -50,6 +56,12 @@
             <% }) %> 
         </ul>
 
-    <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.14.1/ckeditor.js" integrity="sha256-bEIQpI72w9NJuIVhTLFUF2/8uxl0u5800r8ddViuv+o=" crossorigin="anonymous"></script></script>
+        <script src="js/main.js"></script>
+    
+        <script>
+        CKEDITOR.replace('body', { plugins: 'wysiwygarea, toolbar, basicstyles, link, list' })
+    </script>
 </body>
 </html>
