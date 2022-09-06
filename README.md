@@ -5,11 +5,14 @@
 Noteworthy is a a fully responsive, lightweight application that allows users to create and track their completed and uncompleted tasks.
 
 This project was built using the MVC Architecture and implements user authorization.
-Users are able to sign-up, customize and personalize their task and lists.
+Users are able to sign-up, customize and personalize their tasks and lists.
 
 # Functionality
 
-For this project, our team wanted to make sure users could add due dates for their tasks and see a neat and organized list of their finished tasks for a due date once they marked the item as "complete".
+Users are able to add a due date for their tasks and will be automatically sorted based on the soonest approaching date.
+Once created, the item will appear under the list of tasks that have yet to be completed.
+Users can either mark a task as "completed" or delete the task from their list.
+Any finished tasks will appear in the user's completed task list.
 
 # Packages/Dependencies used 
 
