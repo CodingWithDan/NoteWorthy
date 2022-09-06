@@ -19,7 +19,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 |home page|contributors sidebar|
 |:-:|:-:|
-|![home page](./public/images/screenshots/HomePage.png)|![contributors](./public/images/screenshots/Contributors.png)|
+|<img src ="./public/images/screenshots/HomePage.png" width=590 height=388>|![contributors]<img src="./public/images/screenshots/Contributors.png" width=590 height=388>|
 
 |sign up|login|
 |:-:|:-:|
@@ -39,7 +39,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 # Things to add
 
-- Create a `.env` file and add the following as `key: value` 
+- Create a `.env` file and add the following as `key: value`
   - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
  ---
