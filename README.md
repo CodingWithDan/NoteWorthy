@@ -2,10 +2,10 @@
 
 ![test_image](./public/images/NoteworthyBanner.png)
 
-Noteworthy is a a fully responsive simple to-do application that allows users to create and track their completed and uncompleted to-do tasks.
+Noteworthy is a a fully responsive, lightweight application that allows users to create and track their completed and uncompleted tasks.
 
-This project was built using the MVC Architecture and implements user "authorization".
-Users are able to sign-up, customize and personalize their to-do lists.
+This project was built using the MVC Architecture and implements user authorization.
+Users are able to sign-up, customize and personalize their task and lists.
 
 # Functionality
 
@@ -17,7 +17,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 # Screenshots
 
-|home page|contributors|
+|home page|contributors sidebar|
 |:-:|:-:|
 |![home page](./public/images/screenshots/HomePage.png)|![contributors](./public/images/screenshots/Contributors.png)|
 
@@ -25,9 +25,9 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 |:-:|:-:|
 |![sign up](./public/images/screenshots/SignUp.png)|![log in](./public/images/screenshots/LogIn.png)|
 
-|without todo|with todo/completed todo|
+|without tasks|with todo/completed tasks|
 |:-:|:-:|
-|![without todo]()|![with todo]()|
+|![without todo](./public/images/screenshots/withoutTasks.png)|![with todo](./public/images/screenshots/withCompleted.png)|
 
 ---
 
