@@ -1,6 +1,6 @@
 # Introduction - Noteworthy
+
 ![test_image](./public/images/NoteworthyBanner.png)
-<img src="./public/images/NoteworthyBanner.png" width=600 height=300>
 
 Noteworthy is a a simple to-do application that allows users create and track their completed and uncompleted to-do tasks.
 This project was built using the MVC Architecture and implements user "authorization" which will allow users to sign-up, customize and personalize their to-do lists.
