@@ -4,17 +4,11 @@ module.exports = {
     getTodos: async (req, res) => {
         console.log(req.user)
         try {
-
-            const todoItems = await Todo.find({userId:req.user.id}).sort({dueDate: 1})
+            const todoItems = await Todo.find({ userId: req.user.id }).sort({ dueDate: 1 })
             console.log(todoItems);
-            const itemsLeft = await Todo.countDocuments({userId:req.user.id,completed: false})
-            const itemsRight = await Todo.countDocuments({userId:req.user.id, completed: true})
-            res.render('todos.ejs', {todos: todoItems, left: itemsLeft, right: itemsRight, user: req.user})
-            
-    
-
-
-
+            const itemsLeft = await Todo.countDocuments({ userId: req.user.id, completed: false })
+            const itemsRight = await Todo.countDocuments({ userId: req.user.id, completed: true })
+            res.render('todos.ejs', { todos: todoItems, left: itemsLeft, right: itemsRight, user: req.user })
         } catch (err) {
             console.log(err)
         }
@@ -28,7 +22,7 @@ module.exports = {
             const year = dateObj.getUTCFullYear();
             const UTCDate = new Date(year, month, day).toDateString()
 
-            await Todo.create({ todo: req.body.todoItem, completed: false, userId: req.user.id, dueDate: UTCDate})
+            await Todo.create({ todo: req.body.todoItem, completed: false, userId: req.user.id, dueDate: UTCDate })
 
             console.log('Todo has been added!')
             res.redirect('/todos')

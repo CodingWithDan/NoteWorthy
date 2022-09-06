@@ -1,0 +1,159 @@
+.container {
+    color: white;
+    height: auto;
+    background: transparent;
+}
+
+.container > h1 {
+    margin-top: 100px;
+}
+
+nav {
+    height: 60px;
+}
+nav ul {
+    width: 100%;
+    align-items: center;
+}
+
+#dateTime {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-end;
+}
+#dateTime input[type='date'] {
+    width: 100%;
+}
+
+
+.todoList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+
+    padding: 1em;
+    height: auto;
+    overflow: auto;
+}
+
+.todoList > div:nth-child(1) {
+    border-right: 2px solid rgba(255, 255, 255, .27);
+    padding: 1em;
+}
+
+.todoList ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.todoList ul li{
+    width: 100%;
+    background-color: rgba(114, 189, 215, .23);
+    padding: 19px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.todoList ul li .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoList ul li .items .itemName {
+    display: flex;
+    gap: 1em;
+}
+
+.dueDate {
+    width: 100%;
+    color: rgba(255, 255, 255, .6);
+    font-size: 14px;
+}
+
+
+
+.completedList{
+    padding: 1em 0;
+}
+
+.completedList ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.completedList h2 {
+    margin-bottom: 10px;
+}
+.completedList ul li {
+    background-color: #1839A0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+
+.svgFile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svgFile svg {
+    width: 300px;
+    height: 299px;
+}
+
+
+#paper2 {
+    animation: emptyTodo 1s;
+    transform-origin: center;
+}
+@keyframes emptyTodo {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 992px) {
+    .todoList {
+        padding: 0;
+    }
+    .todoList > div:nth-child(1) {
+        padding: 1em 1em 1em 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .todoList {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    
+    .todoList > div:nth-child(1) {
+        padding: 1em 0;
+        border-right: none;
+        border-bottom: 2px solid rgba(255, 255, 255, .27);
+    }
+
+    .svgFile {
+        padding: 1em;
+    }
+    .svgFile svg {
+        width: 100%;
+    }
+
+}

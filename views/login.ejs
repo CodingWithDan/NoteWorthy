@@ -3,43 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteWorthy</title>
+    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+    <!-- Global Design -->
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Home Design -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Login Design -->
+    <link rel="stylesheet" href="css/logIn.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  
- <nav class="paddingSize">
+<body> 
+    <nav class="paddingSize">
         <ul>
             <li><a href="/signup" id="active">Sign In</a></li>
             <li><a href="/login" class="after">Log In</a></li>
             <li><a href="/index" class="after" id="currentPage">Home</a></li>
         </ul>
     </nav>
- 
-
-<div class="container">
-  <div class="forms">
-    <h1>Log In</h1>
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
-    <% if (locals.messages.info) { %>
-        <% messages.info.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
-    <form action="/login" method="POST">
-        <input  class='gray' type="email" name="email" placeholder="Email">
-        <input class='gray' type="password" name="password" placeholder="Password">
-        <input class='login' type="submit" value="Log in">
-        <p><a href='signup'>Create your account <i class="fa fa-long-arrow-right m-1-5" aria-hidden="true"></i></a></p>
-    </form>
-  </div>
-</div>
+    <div class="container">
+        <div class="forms">
+            <h1>Log In</h1>
+            <% if (locals.messages.errors) { %>
+                <% messages.errors.forEach( el => { %>
+                    <div class="alert alert-danger"><%= el.msg %></div>
+                <% }) %>    
+            <% } %>
+            <% if (locals.messages.info) { %>
+                <% messages.info.forEach( el => { %>
+                    <div class="alert alert-danger"><%= el.msg %></div>
+                <% }) %>    
+            <% } %>
+            <form action="/login" method="POST">
+                <input  class='gray' type="email" name="email" placeholder="Email">
+                <input class='gray' type="password" name="password" placeholder="Password">
+                <input class='login' type="submit" value="Log in">
+                <p><a href='signup'>Create your account <i class="fa fa-long-arrow-right m-1-5" aria-hidden="true"></i></a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
