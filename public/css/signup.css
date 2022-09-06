@@ -1,0 +1,143 @@
+body {
+    background-image: linear-gradient(to top right, #3F136F, #0B45AE, #8FDFE2);
+    background-attachment: fixed;
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+ .forms {
+    height: 625px;
+    width: 460px;
+    background-color:#FFFFFF; 
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ h1 {
+    padding-top: 25px;
+    color: black;
+    text-align: center;
+ }
+
+ input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color:   #0C1367;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+.gray {
+  background-color: #eeeef0;
+    border:  #5F6CFF;
+  font-family: 'Poppins';
+    font-size: 16px;
+}
+  
+  .login {
+    background-color: #0C1367;
+    border: #0C1367;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    transiton-duration: 0.3s;
+  }
+
+.login:hover {
+  background-color: #5f67c4;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #0C1367;
+    opacity: 1; /* Firefox */
+  }
+
+  p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+.alert {
+  font-size: 16px;
+  color: red;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: .1s;
+}
+
+.navScroll {
+    background-color: rgba(255, 255, 255, 0.093);
+    backdrop-filter: blur(10px);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+ul a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 1.2em;
+    border-radius: 4px;
+}
+
+ul a[class='after']::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .5);
+    display: block;
+    margin: auto;
+    transition: .3s;
+}
+ul a:hover::after {
+    width: 100%;
+}
+
+#active {
+    display: inline-block;
+    padding: .5em 1.2em;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    transition: .3s;
+}
+
+#active:hover {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+Media Query
+@media (max-width: 576px) {
+    nav {
+        height: 60px;
+    }
+    nav ul {
+        gap: .2em;
+    }
+    nav a {
+        font-size: 12px;
+    }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
