@@ -27,7 +27,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 |without tasks|with todo/completed tasks|
 |:-:|:-:|
-|![without todo](./public/images/screenshots/withoutTasks.png)|![with todo](./public/images/screenshots/withCompleted.png)|
+|<img src ="./public/images/screenshots/withoutTasks.png" width=590 height=300>|<img src ="./public/images/screenshots/withCompleted.png" width=590 height=300>|
 
 ---
 
