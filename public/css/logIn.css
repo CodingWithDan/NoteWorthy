@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(to top  right, #3F136F, #0B45AE, #8FDFE2);
+    background-attachment: fixed;
+    font-family: 'Poppins';
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forms {
+    height: 480px;
+    width: 460px;
+    background-color:#FFFFFF; 
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    padding-top: 25px;
+    color: black;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color:  #0C1367;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.gray {
+    background-color: #eeeef0;
+    border:  #5F6CFF;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.login {
+    background-color: #0C1367;
+    border: #0C1367;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    transiton-duration: 0.3s;
+}
+
+.login:hover {
+    background-color: #5f67c4;
+}
+
+::placeholder {
+    color: #0C1367;
+    opacity: 1;
+    
+}
+
+p {
+    font-size: 16px;
+    padding: 10px;
+}
+p a {
+    color: black;
+    transition: .3s;
+}
+
+p a:hover {
+    color: rgba(0, 0, 0, 0.66);
+}
+p a i {
+    transition: .3s;
+} 
+p a:hover i {
+    transform: translateX(10px);
+}
+
+.alert {
+    font-size: 16px;
+    color: red;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1em;
+    }
+    input {
+        width: 90%;
+    }
+    p a {
+        font-size: 13px;
+    }
+}

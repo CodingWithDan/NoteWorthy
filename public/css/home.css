@@ -1,0 +1,270 @@
+svg {
+    animation: .5s svg;
+}
+@keyframes svg {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#circle1, #circle2, #circle3, #line1, #line2, #line3, #line4, #line5, #line6, .text {
+    animation: 1s line;
+}
+#line1, #line2, #line3, #line4, #line5, #line6 {
+    animation: 1s line infinite alternate;
+}
+
+@keyframes line {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#circle2 {
+    animation-duration: 2s;
+}
+#circle3 {
+    animation-duration: 3s;
+}
+
+#line2 {
+    animation-duration: 2s;
+}
+#line3 {
+    animation-duration: 2.5s;
+}
+#line4 {
+    animation-duration: 3s;
+}
+#line5 {
+    animation-duration: 3.5s;
+}
+#line6 {
+    animation-duration: 4s;
+}
+
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: .1s;
+    z-index: 2;
+}
+
+.navScroll {
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+ul a {
+    display: inline-block;
+    padding: .5em 1.2em;
+    border-radius: 4px;
+}
+
+ul a[class='after']::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .5);
+    display: block;
+    margin: auto;
+    transition: .3s;
+}
+ul a:hover::after {
+    width: 100%;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2em;
+}
+
+header h1 {
+    font-size: 64px;
+}
+header p {
+    color: rgba(255, 255, 255, .82);
+    margin: .5em 0 2em 0;
+}
+
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.551);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    animation: bg 1s;
+}
+
+@keyframes bg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Information */
+.information {
+    width: 450px;
+    height: 100%;
+    background-color: rgba(51, 63, 201, .87);
+    backdrop-filter: blur(8px);
+    padding: 2em 1em;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    transform: translateX(-100%);
+    border-radius: 0 50% 50% 0;
+    transition: .6s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+.information i {
+    display: none;
+}
+
+.openInformation {
+    border-radius: 0;
+    transform: translateX(0);
+}
+
+.information .person {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: white;
+}
+
+.information .person .details {
+    width: 100%;
+}
+
+.information .person p {
+    padding: .3em 0;
+}
+.information .person a {
+    width: 71px;
+    border-radius: 50%;
+}
+.information .person a img {
+    border-radius: 50%;
+    filter: grayscale(50%);
+    transition: .3s;
+}
+.information .person a img:hover {
+    filter: grayscale(0);
+}
+
+.information .person .name {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.478);
+}
+.information .person .task {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .71);
+    text-transform: capitalize;
+}
+
+
+
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 48px;
+    }
+    header {
+        margin-top: 0em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        grid-template-columns: 1fr;
+        margin: 7em 0 10em;
+    }
+    header h1 {
+        font-size: 34px;
+    }
+
+    .information .person a img {
+        filter: grayscale(0);
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        height: 60px;
+    }
+    nav ul {
+        gap: .2em;
+    }
+    nav a {
+        font-size: 12px;
+    }
+
+
+    .information {
+        width: 100%;
+        padding: 5em 1em 1em;
+    }
+    .information i {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        margin-top: 5em;
+    }
+    header p {
+        font-size: 14px;
+        margin: .2em 0 1.5em;
+    }
+    header a {
+        font-size: 14px;
+    }
+}
