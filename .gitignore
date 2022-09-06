@@ -1,8 +1,10 @@
 node_modules
 .env
 
+.DS_Store
+
 config/.env
 
 /config/.env
 
-CRUD-TODO-App/config/.env
+CRUD-TODO-App/config/.env.DS_Store

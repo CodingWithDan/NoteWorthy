@@ -1,15 +1,18 @@
-# Noteworthy - Introduction
+# Noteworthy
 
 ![test_image](./public/images/NoteworthyBanner.png)
 
-Noteworthy is a a fully responsive simple to-do application that allows users to create and track their completed and uncompleted to-do tasks.
+Noteworthy is a a fully responsive, lightweight application that allows users to create and track their completed and uncompleted tasks.
 
-This project was built using the MVC Architecture and implements user "authorization".
-Users are able to sign-up, customize and personalize their to-do lists.
+This project was built using the MVC Architecture and implements user authorization.
+Users are able to sign-up, customize and personalize their tasks and lists.
 
 # Functionality
 
-For this project, our team wanted to make sure users could add due dates for their tasks and see a neat and organized list of their finished tasks for a due date once they marked the item as "complete".
+Users are able to add a due date for their tasks and will be automatically sorted based on the soonest approaching date.
+Once created, the item will appear under the list of tasks that have yet to be completed.
+Users can either mark a task as "completed" or delete the task from their list.
+Any finished tasks will appear in the user's completed task list.
 
 # Packages/Dependencies used 
 
@@ -17,17 +20,17 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 # Screenshots
 
-|home page|contributors|
+|home page|contributors sidebar|
 |:-:|:-:|
-|![home page](./public/images/screenshots/HomePage.png)|![contributors](./public/images/screenshots/Contributors.png)|
+|<img src ="./public/images/screenshots/HomePage.png" width=590 height=300>|<img src="./public/images/screenshots/Contributors.png" width=590 height=300>|
 
 |sign up|login|
 |:-:|:-:|
 |![sign up](./public/images/screenshots/SignUp.png)|![log in](./public/images/screenshots/LogIn.png)|
 
-|without todo|with todo/completed todo|
+|without tasks|with todo/completed tasks|
 |:-:|:-:|
-|![without todo]()|![with todo]()|
+|<img src ="./public/images/screenshots/withoutTasks.png" width=590 height=300>|<img src ="./public/images/screenshots/withCompleted.png" width=590 height=300>|
 
 ---
 
@@ -39,7 +42,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 # Things to add
 
-- Create a `.env` file and add the following as `key: value` 
+- Create a `.env` file and add the following as `key: value`
   - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
  ---
