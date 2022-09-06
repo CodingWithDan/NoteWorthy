@@ -1,11 +1,18 @@
-# Introduction
+# Introduction - Noteworthy
+![test_image](./public/images/NoteworthyBanner.png)
+<img src="./public/images/NoteworthyBanner.png" width=600 height=300>
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+Noteworthy is a a simple to-do application that allows users create and track their completed and uncompleted to-do tasks.
+This project was built using the MVC Architecture and implements user "authorization" which will allow users to sign-up, customize and personalize their to-do lists.
 
+# Functionality
 
 # Packages/Dependencies used 
 
 bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
+
+# Screenshots
+
 
 ---
 
