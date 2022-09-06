@@ -1,4 +1,4 @@
-# Noteworthy - Introduction
+# Noteworthy
 
 ![test_image](./public/images/NoteworthyBanner.png)
 
