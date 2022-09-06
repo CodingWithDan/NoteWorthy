@@ -19,7 +19,7 @@
             <li class='todoItem' data-id='<%=el._id%>'> <br>
                 <span><%= todos.indexOf(el) + 1%>.</span>
                 <span  class='<%= el.completed === true ? 'completed' : 'not' %>'><%- el.todo %></span><br>
-                <button class='del'> Delete </button>
+                <button type="button" class='del'> Delete </button>
                 
                 <span class='dueDate'> Due Date: <%= el.dueDate.toString().split(' ').slice(0, 3).join(' ') %> </span>
                 
@@ -45,8 +45,8 @@
         <ul>
             <% todos.forEach( el => { %>
                 <% if(el.completed){ %>
-                    <li class='todoItem' data-id='<%=el._id%>'>
-                        <span class='<%= el.completed === true ? 'completed' : 'not' %>'><%= el.todo %></span>
+                    <li class='todoItem' data-id='<%=el._id%>'> <br>
+                        <span class='<%= el.completed === true ? 'completed' : 'not' %>'><% el.todo %></span>
                         <button type="button" class='del'> Delete </button>
                     </li>
                 <% } else{ %>
@@ -54,6 +54,8 @@
                 <% } %>
             <% }) %> 
         </ul>
+
+      
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.14.1/ckeditor.js" integrity="sha256-bEIQpI72w9NJuIVhTLFUF2/8uxl0u5800r8ddViuv+o=" crossorigin="anonymous"></script></script>

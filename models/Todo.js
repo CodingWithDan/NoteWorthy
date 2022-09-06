@@ -23,9 +23,6 @@ const TodoSchema = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
-  colorClass: {
-    type: String
-  }
 })
 
 module.exports = mongoose.model('Todo', TodoSchema)
