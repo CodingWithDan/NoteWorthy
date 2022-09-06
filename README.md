@@ -33,6 +33,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 - [Bonnie](https://github.com/MissGin)
 - [Daniel](https://github.com/CodingWithDan)
 - [Meghann](https://github.com/meghannfh)
+- [Leonie](https://github.com/lmiddeke)
 
  ---
  
