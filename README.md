@@ -19,7 +19,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 |home page|contributors sidebar|
 |:-:|:-:|
-|<img src ="./public/images/screenshots/HomePage.png" width=590 height=350>|<img src="./public/images/screenshots/Contributors.png" width=590 height=350>|
+|<img src ="./public/images/screenshots/HomePage.png" width=590 height=300>|<img src="./public/images/screenshots/Contributors.png" width=590 height=300>|
 
 |sign up|login|
 |:-:|:-:|
