@@ -19,7 +19,7 @@
             <li class='todoItem' data-id='<%=el._id%>'> <br>
                 <span><%= todos.indexOf(el) + 1%>.</span>
                 <span  class='<%= el.completed === true ? 'completed' : 'not' %>'><%- el.todo %></span><br>
-                <button class='del'> Delete </button>
+                <button type="button" class='del' > Delete </button>
                 
                 <span class='dueDate'> Due Date: <%= el.dueDate.toString().split(' ').slice(0, 3).join(' ') %> </span>
                 
