@@ -17,8 +17,13 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 # Screenshots
 
-<img src="./public/images/Contributors.png" width=500 height=350 >
-<img src="./public/images/HomePage.png" width=500 height=350 >
+|First Image|Second Image|
+|:-:|:-:|
+|![First Image](./public/images/Contributors.png)|![Second Image](./public/images/HomePage.png)|
+
+
+<!-- <img align="left" src="./public/images/Contributors.png" width=500 height=350>
+<img src="./public/images/HomePage.png" width=500 height=350 > -->
 
 ---
 
