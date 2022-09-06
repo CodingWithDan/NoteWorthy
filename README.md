@@ -21,9 +21,13 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 |:-:|:-:|
 |![home page](./public/images/HomePage.png)|![contributors](./public/images/Contributors.png)|
 
+|sign up|login|
+|:-:|:-:|
+|![sign up](./public/images/HomePage.png)|![login](./public/images/LogIn.png)|
 
-<!-- <img align="left" src="./public/images/Contributors.png" width=500 height=350>
-<img src="./public/images/HomePage.png" width=500 height=350 > -->
+|without todo|with todo/completed todo|
+|:-:|:-:|
+|![without todo](./public/images/todoWithoutData.png)|![with todo](./public/images/todoWithData.png)|
 
 ---
 
