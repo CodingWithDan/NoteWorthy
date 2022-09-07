@@ -22,15 +22,15 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 |home page|contributors sidebar|
 |:-:|:-:|
-|<img src ="./public/images/screenshots/HomePage.png" width=590 height=300>|<img src="./public/images/screenshots/Contributors.png" width=590 height=300>|
+|<img src ="./public/images/screenshots/HomePage.png" width=590 height=290>|<img src="./public/images/screenshots/Contributors.png" width=590 height=290>|
 
 |sign up|login|
 |:-:|:-:|
-|![sign up](./public/images/screenshots/SignUp.png)|![log in](./public/images/screenshots/LogIn.png)|
+|<img src="./public/images/screenshots/SignUp.png" width=590 height=290>|<img src="./public/images/screenshots/LogIn.png" width=590 height=290>|
 
 |without tasks|with todo/completed tasks|
 |:-:|:-:|
-|<img src ="./public/images/screenshots/withoutTasks.png" width=590 height=300>|<img src ="./public/images/screenshots/withCompleted.png" width=590 height=300>|
+|<img src ="./public/images/screenshots/withoutTasks.png" width=590 height=290>|<img src ="./public/images/screenshots/withCompleted.png" width=590 height=290>|
 
 ---
 
