@@ -26,7 +26,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 |sign up|login|
 |:-:|:-:|
-|<img src="./public/images/screenshots/SignUp.png" width=590 height=290>|<img src="./public/images/screenshots/LogIn.png" width=590 height=290>
+|<img src="./public/images/screenshots/SignUp.png" width=590 height=280>|<img src="./public/images/screenshots/LogIn.png" width=590 height=280>
 
 |without tasks|with todo/completed tasks|
 |:-:|:-:|
