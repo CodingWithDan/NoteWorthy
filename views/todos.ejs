@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/home.css">
     <!-- Login Design -->
     <link rel="stylesheet" href="css/todo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
     <style>
         #bg {
             width: 100%;
@@ -39,24 +36,6 @@
 
     <div id="bg"></div>
     <h1>Noteworthy</h1>
-    
-    <ul>
-        <% todos.forEach( el => { %>
-            <% if(!el.completed){ %>
-                <li class='todoItem' data-id='<%=el._id%>'> <br>
-                    <span><%= todos.indexOf(el) + 1%>.</span>
-                    <span  class='<%= el.completed === true ? 'completed' : 'not' %>'><%- el.todo %></span><br>
-                    <button type="button" class='del'> Delete </button>
-                    
-                    <span class='dueDate'> Due Date: <%= el.dueDate.toString().split(' ').slice(0, 3).join(' ') %> </span>
-                    
-                </li>
-            <% } else{ %>
-            <% } %>
-        <% }) %>    
-    </ul>
-    
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
 
     <form action="/todos/createTodo" method='POST'>
         <textarea type="text" placeholder="Enter Todo Item" name='todoItem' id="body"></textarea>
